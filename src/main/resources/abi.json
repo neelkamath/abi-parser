@@ -1,0 +1,56 @@
+[
+  {
+    "type": "impl",
+    "name": "FrancoImpl",
+    "interface_name": "hunt::IFranco"
+  },
+  {
+    "type": "struct",
+    "name": "core::integer::u256",
+    "members": [
+      {
+        "name": "low",
+        "type": "core::integer::u128"
+      },
+      {
+        "name": "high",
+        "type": "core::integer::u128"
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "hunt::IFranco",
+    "items": [
+      {
+        "type": "function",
+        "name": "add_count",
+        "inputs": [
+          {
+            "name": "amount",
+            "type": "core::integer::u256"
+          }
+        ],
+        "outputs": [],
+        "state_mutability": "external"
+      },
+      {
+        "type": "function",
+        "name": "get_count",
+        "inputs": [],
+        "outputs": [
+          {
+            "type": "core::integer::u256"
+          }
+        ],
+        "state_mutability": "view"
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "hunt::Franco::Event",
+    "kind": "enum",
+    "variants": []
+  }
+]
